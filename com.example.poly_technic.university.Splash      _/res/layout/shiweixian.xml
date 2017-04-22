@@ -1,0 +1,615 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#129AEE"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/top_bar_background" >
+
+        <Button
+            android:id="@+id/newsdetails_titlebar_previous"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="3.0dip"
+            android:background="@drawable/entertainment_previous_btn" />
+
+        <TextView
+            android:id="@+id/newsdetails_titlebar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="50.0dip"
+            android:layout_toRightOf="@id/newsdetails_titlebar_previous"
+            android:gravity="center_horizontal"
+            android:text="美食列表"
+            android:textColor="@android:color/white"
+            android:textSize="20.0sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:orientation="vertical" >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="0.5dp"
+            android:background="#129AEE" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="0.5dp"
+                android:layout_weight="1"
+                android:background="#ffffcc99"
+                android:gravity="center"
+                android:text="菜名"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="0.5dp"
+                android:layout_weight="1"
+                android:background="#ffffcc99"
+                android:gravity="center"
+                android:text="价格"
+                android:textColor="@android:color/black" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="0.5dp"
+            android:background="@android:color/holo_blue_light" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="0.5dp"
+                android:layout_weight="1"
+                android:background="#ffffcc99"
+                android:gravity="center"
+                android:text="香嫩鸡柳饭"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="0.5dp"
+                android:layout_weight="1"
+                android:background="#ffffcc99"
+                android:gravity="center"
+                android:text="¥ 10"
+                android:textColor="#FF0000" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="0.5dp"
+            android:background="@android:color/holo_blue_light"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="0.5dp"
+                android:layout_weight="1"
+                android:background="#ffffcc99"
+                android:gravity="center"
+                android:text="特色煎肉饭"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="0.5dp"
+                android:layout_weight="1"
+                android:background="#ffffcc99"
+                android:gravity="center"
+                android:text="¥ 10"
+                android:textColor="#FF0000" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="0.5dp"
+            android:background="@android:color/holo_blue_light" >
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="0.5dp"
+                android:layout_weight="1"
+                android:background="#ffffcc99"
+                android:gravity="center"
+                android:text="招牌鸡扒饭"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="0.5dp"
+                android:layout_weight="1"
+                android:background="#ffffcc99"
+                android:gravity="center"
+                android:text="¥ 10"
+                android:textColor="#FF0000" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="0.5dp"
+            android:background="@android:color/holo_blue_light" >
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="0.5dp"
+                android:layout_weight="1"
+                android:background="#ffffcc99"
+                android:gravity="center"
+                android:text="北京板鸭饭"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="0.5dp"
+                android:layout_weight="1"
+                android:background="#ffffcc99"
+                android:gravity="center"
+                android:text="¥ 12"
+                android:textColor="#FF0000" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="0.5dp"
+            android:background="@android:color/holo_blue_light" >
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="0.5dp"
+                android:layout_weight="1"
+                android:background="#ffffcc99"
+                android:gravity="center"
+                android:text="奥尔良鸡肉饭"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="0.5dp"
+                android:layout_weight="1"
+                android:background="#ffffcc99"
+                android:gravity="center"
+                android:text="¥ 10"
+                android:textColor="#FF0000" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="0.5dp"
+            android:background="@android:color/holo_blue_light" >
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="0.5dp"
+                android:layout_weight="1"
+                android:background="#ffffcc99"
+                android:gravity="center"
+                android:text="台湾热狗饭"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="0.5dp"
+                android:layout_weight="1"
+                android:background="#ffffcc99"
+                android:gravity="center"
+                android:text="¥ 10"
+                android:textColor="#FF0000" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="0.5dp"
+            android:background="@android:color/holo_blue_light" >
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="0.5dp"
+                android:layout_weight="1"
+                android:background="#ffffcc99"
+                android:gravity="center"
+                android:text="孜然肉根饭"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="0.5dp"
+                android:layout_weight="1"
+                android:background="#ffffcc99"
+                android:gravity="center"
+                android:text="¥ 10"
+                android:textColor="#FF0000" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="0.5dp"
+            android:background="@android:color/holo_blue_light" >
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="0.5dp"
+                android:layout_weight="1"
+                android:background="#ffffcc99"
+                android:gravity="center"
+                android:text="一口香脆骨饭"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="0.5dp"
+                android:layout_weight="1"
+                android:background="#ffffcc99"
+                android:gravity="center"
+                android:text="¥ 10"
+                android:textColor="#FF0000" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="0.5dp"
+            android:background="@android:color/holo_blue_light" >
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="0.5dp"
+                android:layout_weight="1"
+                android:background="#ffffcc99"
+                android:gravity="center"
+                android:text="鸡米花"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="0.5dp"
+                android:layout_weight="1"
+                android:background="#ffffcc99"
+                android:gravity="center"
+                android:text="¥ 8"
+                android:textColor="#FF0000" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="0.5dp"
+            android:background="@android:color/holo_blue_light" >
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="0.5dp"
+                android:layout_weight="1"
+                android:background="#ffffcc99"
+                android:gravity="center"
+                android:text="独家酱肉饭"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="0.5dp"
+                android:layout_weight="1"
+                android:background="#ffffcc99"
+                android:gravity="center"
+                android:text="¥ 12"
+                android:textColor="#FF0000" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="0.5dp"
+            android:background="@android:color/holo_blue_light" >
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="0.5dp"
+                android:layout_weight="1"
+                android:background="#ffffcc99"
+                android:gravity="center"
+                android:text="超值大鸡腿饭"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="0.5dp"
+                android:layout_weight="1"
+                android:background="#ffffcc99"
+                android:gravity="center"
+                android:text="¥ 13"
+                android:textColor="#FF0000" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="0.5dp"
+            android:background="@android:color/holo_blue_light" >
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="0.5dp"
+                android:layout_weight="1"
+                android:background="#ffffcc99"
+                android:gravity="center"
+                android:text="煎肉鸡块双拼饭"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="0.5dp"
+                android:layout_weight="1"
+                android:background="#ffffcc99"
+                android:gravity="center"
+                android:text="¥ 12"
+                android:textColor="#FF0000" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="0.5dp"
+            android:background="@android:color/holo_blue_light" >
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="0.5dp"
+                android:layout_weight="1"
+                android:background="#ffffcc99"
+                android:gravity="center"
+                android:text="鸡扒脆骨双拼饭"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="0.5dp"
+                android:layout_weight="1"
+                android:background="#ffffcc99"
+                android:gravity="center"
+                android:text="¥ 12"
+                android:textColor="#FF0000" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="0.5dp"
+            android:background="@android:color/holo_blue_light" >
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="0.5dp"
+                android:layout_weight="1"
+                android:background="#ffffcc99"
+                android:gravity="center"
+                android:text="手撕鸡肉饭"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="0.5dp"
+                android:layout_weight="1"
+                android:background="#ffffcc99"
+                android:gravity="center"
+                android:text="¥ 13"
+                android:textColor="#FF0000" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="0.5dp"
+            android:background="@android:color/holo_blue_light" >
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="0.5dp"
+                android:layout_weight="1"
+                android:background="#ffffcc99"
+                android:gravity="center"
+                android:text="原味奶茶"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="0.5dp"
+                android:layout_weight="1"
+                android:background="#ffffcc99"
+                android:gravity="center"
+                android:text="¥ 5"
+                android:textColor="#FF0000" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="0.5dp"
+            android:background="@android:color/holo_blue_light" >
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="0.5dp"
+                android:layout_weight="1"
+                android:background="#ffffcc99"
+                android:gravity="center"
+                android:text="芒果奶茶"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="0.5dp"
+                android:layout_weight="1"
+                android:background="#ffffcc99"
+                android:gravity="center"
+                android:text="¥ 5"
+                android:textColor="#FF0000" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="0.5dp"
+            android:background="@android:color/holo_blue_light" >
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="0.5dp"
+                android:layout_weight="1"
+                android:background="#ffffcc99"
+                android:gravity="center"
+                android:text="草莓奶茶"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="0.5dp"
+                android:layout_weight="1"
+                android:background="#ffffcc99"
+                android:gravity="center"
+                android:text="¥ 5"
+                android:textColor="#FF0000" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="0.5dp"
+            android:background="@drawable/shape1" >
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="0.5dp"
+                android:layout_weight="1"
+                android:text="电话：666020"
+                android:textColor="@android:color/black"
+                android:background="@drawable/shape2"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_margin="0.5dp"
+                android:layout_weight="1"
+                android:text="拨打电话"
+                android:background="@drawable/shape2"
+                android:gravity="center"
+                android:textColor="@android:color/black" />
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>

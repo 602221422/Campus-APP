@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" 
+    android:id="@+id/home" 
+    android:background="@android:color/white" 
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout 
+        android:orientation="vertical" 
+        android:clickable="true" 
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content">
+        <RelativeLayout 
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:background="@drawable/top_bar_background"
+		>
+		<Button
+			android:id="@+id/newsdetails_titlebar_previous"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerVertical="true"
+			android:layout_marginLeft="3.0dip"
+			android:layout_alignParentLeft="true" 
+			android:background="@drawable/entertainment_previous_btn"
+			/>
+		<TextView
+			android:id="@+id/newsdetails_titlebar_title"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="70.0dip"
+			  android:layout_centerVertical="true"
+			android:layout_toRightOf="@id/newsdetails_titlebar_previous"
+			 android:textSize="20.0sp"
+            android:textStyle="bold"
+			android:textColor="@android:color/white"
+			android:text="关于"
+			android:gravity="center_horizontal"
+			/>
+	
+	</RelativeLayout>	
+        <View 
+            android:background="#ff109bc1" 
+            android:layout_width="fill_parent" 
+            android:layout_height="0.100000024dip" />
+    </LinearLayout>
+    <ScrollView 
+        android:layout_width="fill_parent" 
+        android:layout_height="fill_parent">
+        <LinearLayout 
+            android:orientation="vertical" 
+            android:layout_width="fill_parent" 
+            android:layout_height="wrap_content">
+            <ImageView 
+                android:layout_gravity="center_horizontal" 
+                android:layout_width="80.0dip" 
+                android:layout_height="80.0dip" 
+                android:layout_marginTop="10.0dip" 
+                android:src="@drawable/school4" />
+            <TextView 
+                android:textSize="20.0sp" 
+                android:layout_gravity="center_horizontal" 
+                android:layout_width="wrap_content" 
+                android:layout_height="wrap_content" 
+                android:layout_marginTop="10.0dip" 
+                android:text="沈阳工业大学校园通" />
+            
+            <LinearLayout 
+                android:layout_width="fill_parent" 
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal" 
+                android:layout_marginTop="10.0dip"  >
+            <TextView 
+                android:textSize="14.0sp" 
+                android:layout_gravity="center_horizontal" 
+                android:id="@+id/banbenshow" 
+                android:layout_width="wrap_content" 
+                android:layout_height="wrap_content" 
+                android:text="版本: " />
+            <TextView 
+                android:textSize="14.0sp" 
+                android:layout_gravity="center_horizontal" 
+                android:id="@+id/banben" 
+                android:layout_width="wrap_content" 
+                android:layout_height="wrap_content" 
+                android:text="Android版本show" />
+            </LinearLayout>
+            
+            <TextView 
+                android:textSize="13.0sp" 
+                android:layout_gravity="center_horizontal" 
+                android:layout_width="wrap_content" 
+                android:layout_height="wrap_content" 
+                android:layout_marginTop="10.0dip" 
+                android:text="QQ群： 12345678" />
+
+            <LinearLayout 
+                android:layout_gravity="center_horizontal" 
+                android:orientation="horizontal" 
+                android:layout_width="wrap_content" 
+                android:layout_height="wrap_content" 
+                android:layout_marginTop="10.0dip">
+                <TextView 
+                android:textSize="13.0sp" 
+                android:layout_gravity="center_horizontal" 
+                android:layout_width="wrap_content" 
+                android:layout_height="wrap_content" 
+                android:layout_marginTop="10.0dip" 
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/shape2"
+                android:text="@string/team" />
+            </LinearLayout>
+                        <TextView 
+                android:textSize="13.0sp" 
+                android:autoLink="web" 
+                android:layout_gravity="center_horizontal" 
+                android:layout_width="wrap_content" 
+                android:layout_height="wrap_content" 
+                android:layout_marginTop="10.0dip" 
+                android:layout_marginBottom="10dp"
+                android:text="工大首页：http://www.sut.edu.cn/"  />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

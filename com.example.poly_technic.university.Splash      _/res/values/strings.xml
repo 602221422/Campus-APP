@@ -1,0 +1,93 @@
+<resources>
+
+    <string name="app_name">校园助手</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">校园助手</string>
+    <string name="activity">首页</string>
+    <string name="study">学习</string>
+    <string name="life">生活</string>
+    <string name="shetuan">社团</string>
+    <string name="title_name">校园助手</string>
+  <string name="loadmore_btn">加载更多</string>
+    <string name="loadmore_txt">正在加载，请稍候...</string>
+       <string name="login_name">账号</string>
+    <string name="login_password">密码</string>
+    <string name="cansel">取消</string>
+    <string name="login">登陆</string>  
+           
+    <string name="inputpassword">请输入密码</string>   
+    <!-- 游戏添加内容 -->
+    <string name="NewGame">new game</string><string name="inputname">请输入 账号</string>
+    <string name="Scores">score</string>
+    <string name="ExitGame">exit game</string>
+    <string name="Return">return</string>
+    <string name="FeiJiScore">飞机大战分数</string>
+    <string name="FeiJiScoreList">飞机大战分数排行榜</string>
+
+    <color name="black">#ff000000</color>
+    <color name="gray">#7B797B</color>
+
+    <string name="hello">Hello World, CalculatorActivity!</string>
+    <string name="one">1</string>
+    <string name="two">2</string>
+    <string name="three">3</string>
+    <string name="fore">4</string>
+    <string name="five">5</string>
+    <string name="six">6</string>
+    <string name="seven">7</string>
+    <string name="eight">8</string>
+    <string name="nine">9</string>
+    <string name="zero">0</string>
+    <string name="jia">+</string>
+    <string name="jian">-</string>
+    <string name="cheng">*</string>
+    <string name="chu">/</string>
+    <string name="dengyu">=</string>
+    <string name="zhengfu">+/-</string>
+    <string name="dihao">.</string>
+    <string name="ping">x²</string>
+    <string name="kai">√x</string>
+    <string name="shanchu">ce</string>
+    <string name="shan">c</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="score">分数：</string>
+    <string name="bestscore">最高分：</string>
+    <string name="newgame">重新开始</string>
+    
+    
+    <string name="ktvy"> 地址:宏伟路（辽化老道油厂西20米 \n电话:1504191898\n</string>
+    <string name="ktvb"> 地址:府前街与宏伟路交汇南113米 \n推荐指数3.5\n</string>
+    <string name="ktvdd"> 地址:府前街与宏伟路交汇北95米 \n推荐指数4.0\n</string>
+    <string name="ktvdt"> 地址：宏伟区辽化老道（宏基路辽阳挂面厂旁）\n电话：0419-598188 \n推荐指数:4.8\n</string>
+    <string name="ktvx"> 地址:辽化家居广场附近 \n推荐指数3.0\n</string>
+    
+    <string name="yiyuan1"> 标签:综合医院 \n地址:工农大街5号 \n电话:(0419)5153303 \n推荐指数：5.0\n</string>
+    <string name="yiyuan2"> 标签:综合医院 \n地址:卫国路一段1号 \n电话:(0419)2259100 \n推荐指数：4.0\n</string>
+    <string name="yiyuan3"> 标签: 三甲医院 \n地址: 辽阳市文圣区中华大街二段148号 \n电话:(0419)3224406 \n荐指数:3.7\n</string>
+    <string name="yiyuan4"> 标签:三甲医院 综合医院 \n地址:青年大街84号 \n 推荐指数： 5.0\n</string>
+    <string name="yiyuan5"> 标签:中医院 \n地址:辽阳市文圣区东六道街40号 \n电话:(0419)3232576 \n推荐指数： 3.7\n</string>
+    
+    
+    <string name="gongjiao1"> 方向: 站前—>辽化 \n站前—>广场—>建行—>京都—>金地旅行社—>一高中—>九中-辽化宾馆—>小区—>三院—>小南门—>曙光—>太子河交警—>加油站—>徐家—>香港花园—>文圣仪表—>宏伟桥—>小打白—>大打白—>加工厂—>挂面厂—>宏伟区—>辽化\n运营时间：上午5：20	晚上20：00\n</string>
+    <string name="gongjiao2"> 方向: 站前—>辽化 \n站前—>广场—>建行—>京都-金地旅行社—>一高中—>九中—>辽化宾馆—>小区—>三院—>小南门—>曙光—>太子河交警—>加油站—>徐家—>雅朝—>杜家—>铝材厂—>十八区—>辽化高中—>亿方—>新宇海尔—>康乐—>医院—>一小—>文化宫—>辽化\n运营时间：上午5：20	晚上20：00\n</string>
+    <string name="gongjiao3"> 方向: 站 前—>辽 化 \n站前—>广场—>水塔—>市医院—>四道街—>鼎祥—>安居小区—>东二道街—>文圣交警—>酒厂—>煤场—>小南门—>曙光—>太子河交警—>加油站—>徐家—>雅朝—>杜家—>铝材厂—>十八区—>荣华路—>市场—>十八区—>宏伟区—>辽化\n运营时间：上午：5：40	 晚上：19：05\n</string>
+    <string name="gongjiao4"> 方向: 龙鼎山庄五区—>鼎山庄五区 \n龙鼎山庄五区—>世纪龙鼎—>龙鼎山庄A园—>辽化医院—>辽化医院北站—>康乐（单向）—>十九区液化气站—>荟萃湖社区—>沈阳工业大学—>龙城柏丽—>维康大药房—>荣华园—>十八区—>宏伟广场—>宏伟供电营业厅—>辽化炼油厂—>高层—>荣华市场—>老干部活动中心—>少年宫—>东方路小区—>辽化总公司—>二招—>十九中—>火炬街—>龙鼎山庄派出所—>宝山路—>沿山路—>鼎山庄五区\n运营时间：上午：	6：08	  晚上：18：30\n</string>
+    <string name="gongjiao5"> 方向: 站前—>龙鼎山\n站前—>广佑寺 —> 东都影城 —> 建行—> 木鱼石 —>普化小学 —> 物价局 —> 社保 —> 老干部局 —> 铁通 —> 教委小区—> 千山酒厂 —> 二处 —> 三处 —>曙光 —> 太子河交警 —>加油站 —>徐家 —> 博艺学校 —> 雅朝 —> 忠旺铝材厂 —> 杜家美林园 —>宏伟区政府 —> 信达证券 —> 辽化高中 —> 亿方 —> 新宇海尔 —> 康乐 —> 辽化医院北站 —> 辽化医院 —> 龙鼎山庄A区 —> 龙鼎山\n运营时间：上午：	6：08	  晚上：18：30\n</string>
+    
+    
+    <string name="yingyuan1"> 地址:汇文路与风华街交汇处 \n推荐指数：1.7\n</string>
+    <string name="yingyuan2"> 地址:辽阳市白塔区民主路14号 \n电话:(0419)4239999 \n营业时间:09:30-24:00 \n商户描述:五星级的享受 \n推荐指数：3.5\n</string>
+    <string name="yingyuan3"> 地址:辽阳市辽阳县人民街87号贺尊购物中心广场6楼 \n电话:(0419)5572018 \n营业时间:09:00-22:00 \n推荐指数：3.8\n</string>
+    <string name="yingyuan4"> 地址:7区辽化体育馆东南方50米 \n电话:(0419)516095\n</string>
+    
+    
+    <string name="jingdian1"> 景区类别: 旅游景点 \n门票价格: ￥免费\n开放时间:8:00-18:00 \n地址:中国辽宁省辽阳市宏伟区先锋路36号(靠近益华洗消剂公司) \n电话:(0419)5165330 \n景点介绍: \n龙顶山风景区位于城区南侧，东起云台，西至辽化医院后山，总占地面积3682亩。龙顶山风景区于1992年开始建设，现建有一条长15华里的环山路，还有小型会议厅娱乐厅，院内建有一小型游泳池，栽植了花卉草坪，门外建有大花圃"钟古楼"，楼内悬挂一口古钟，登楼可俯看辽化全貌。在公园制高点处建一八角重檐亭，拾级而上，可眺辽阳市区，名为"西峰秀色"。在左烽火台的遗址处修建了260米长的古长城及烽火台。在低洼处筑坝截水，形成人工湖，名为"东山湖"，湖水最深处7米以上，可放养鱼苗供游人垂钓。\n</string>
+    <string name="jingdian2"> 景区类别: 旅游景点，A景区 \n门票价格:￥5元 \n开放时间:08:00-17:00 \n地址:武圣路卧狮胡同2号 \n景点介绍: \n辽阳曹雪芹纪念馆座落于辽阳老城区小什街吴公馆旧址。纪念馆占地1600平方米，院内有清代平房21间，灰砖合瓦，明柱重檐，雕梁画栋，曲径回廊，实为思古探幽的好去处。曹雪芹纪念馆是1996年在清代建筑吴公馆原址上建立起来的，是市级文物保护单位。院内有曹雪芹塑像。曹雪芹是中国古典名著红楼梦的作者，经"红学专家"多年考证其祖籍在辽阳。馆内各展室收藏和展出曹家有关历史档案及曹雪芹祖父曹寅诗作落款辽阳千山以及曹氏家谱清宫档案等一系列文献资料，表明曹雪芹祖籍辽阳这一史实。此外，还陈列红楼梦版本以及以红楼梦为内容的全国名家书画等。整个陈列馆为清代建筑，每个展室皆有楹联，前门有著名"红学"专家冯其庸题写的"曹雪芹纪念馆"金字牌匾。\n</string>
+    <string name="jingdian3"> 景区类别: 陵墓 \n门票价格: 10元 \n 开放时间:8：00—18：00\n地址:东京陵乡东京陵村 \n景点介绍:\n东京陵位于辽宁省辽阳市东京陵乡东京陵村，1988年列为省级文物保护单位。清太祖努尔哈赤迁都辽阳后，于后金天命九年1624年将其祖父弟子等十余人的陵墓由赫图阿拉迁至东京城东北4华里的阳鲁山上，成为后金祖陵，故称"东京陵"。\n</string>
+    <string name="jingdian4"> 景区类别:文化宗教，AAAA景区 \n门票价格: 40.00元 \n开放时间: 08:00~17:00 \n地址:辽阳市中华大街一段93—1号 \n电话: (0419)2890666 \n景点介绍: \n广佑寺遗址位于白塔公园内。史料记载，该寺建于东汉，是佛教传入中国后最早出现的寺院之一。皇统五年，金世宗完颜雍之母地洪原法号通慧圆明在辽阳落发为尼。朝廷出巨资扩建寺院，御敕寺额“大清安禅寺”，并为其在寺旁另建“垂庆寺”尼院别居。今逢盛世，广佑寺将在这块给了她无限滋养的土地上获得再生。其整体建筑以辽代风格为基调，并融合明清建筑之精华，为我国传统建筑的杰出代表。广佑寺西临白塔，东与古城护城河相融，占地面积6万平方米，南北中轴线依次为牌楼山门天王殿大雄宝殿万佛堂藏经楼僧舍，东西两侧各建钟楼鼓楼碑亭配殿圆通禅院，建筑面积万余平方米。是目前世界殿内佛身最高体积最大的木质释加牟尼佛坐像。新建的广佑寺与中华广场白塔古典园林公园青年湖公园融为一体，在广佑寺白塔的衬托下，将成为一处著名的佛教圣地和重要的旅游景区。\n</string>
+   
+    <string name="version_name">版本号： </string>
+    <string name="team">213团队简介：\n213，是我们的宿舍号，在这个集体中，有孙彬，梁龙兵，王成宇，张路兵。其中，以孙彬为队长，带领大家历时几个月的时间，终于完成了这款APP，这是我们第一次做手机APP，希望大家能够支持，有什么问题在qq群里向我们反馈。\n\nApp简介：\n这款APP，主要是针对沈阳工业大学辽阳校区的同学们的，为了方便新入学的同学们能更快的融入我们的校园，以及方便同学们的生活等。</string>
+
+</resources>

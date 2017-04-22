@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginBottom="0.0dip"
+    android:background="@drawable/bckgr" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/top_bar_background" >
+
+        <Button
+            android:id="@+id/energy_titlebar_previous"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5.0dip"
+            android:background="@drawable/entertainment_previous_btn" />
+
+        <TextView
+            android:id="@+id/energy_titlebar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="120.0dip"
+            android:text="电费余额查询"
+            android:textColor="@android:color/white"
+            android:textSize="20.0sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dip"
+        android:background="#44c5cb" >
+
+        <com.example.poly_technic.university.util.PickerView
+            android:id="@+id/minute_pv"
+            android:layout_width="80dp"
+            android:layout_height="160dp" />
+
+        <com.example.poly_technic.university.util.PickerView
+            android:id="@+id/second_pv1"
+            android:layout_width="40dp"
+            android:layout_height="160dp"
+            android:layout_toRightOf="@id/minute_pv" />
+
+        <com.example.poly_technic.university.util.PickerView
+            android:id="@+id/second_pv2"
+            android:layout_width="40dp"
+            android:layout_height="160dp"
+            android:layout_toRightOf="@id/second_pv1" />
+
+        <com.example.poly_technic.university.util.PickerView
+            android:id="@+id/second_pv3"
+            android:layout_width="40dp"
+            android:layout_height="160dp"
+            android:layout_toRightOf="@id/second_pv2" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/head" >
+
+        <Button
+            android:id="@+id/energy_check"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dip"
+            android:textColor="@android:color/black"
+            android:text="查询"
+             />
+
+        <TextView
+            android:id="@+id/check_result"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/energy_check"
+            android:layout_marginLeft="70dip"
+            android:layout_marginTop="60dip"
+            android:textColor="#ff0000"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</RelativeLayout>

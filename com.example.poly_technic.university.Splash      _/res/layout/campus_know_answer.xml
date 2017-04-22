@@ -1,0 +1,70 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d8e0e8" 
+    android:orientation="vertical">
+    	<RelativeLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:background="@drawable/top_bar_background"
+		>
+		<Button
+			android:id="@+id/Campus_answer_titlebar_previous"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerVertical="true"
+			android:layout_marginLeft="5.0dip"
+			android:layout_alignParentLeft="true" 
+			android:background="@drawable/entertainment_previous_btn"
+			/>
+		<TextView
+			android:id="@+id/Campus_answer_titlebar_title"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="75.0dip"
+			  android:layout_centerVertical="true"
+			android:layout_toRightOf="@id/Campus_answer_titlebar_previous"
+			 android:textSize="20.0sp"
+            android:textStyle="bold"
+			android:textColor="@android:color/white"
+			android:text="回答"
+			/>
+
+		
+	</RelativeLayout>
+    
+    <ListView 
+        android:id="@+id/answer_msg_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="#0000">
+        
+    </ListView>
+
+    
+   <LinearLayout 
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       	android:focusable="true" 
+		android:focusableInTouchMode="true">
+       
+       <EditText 
+           android:id="@+id/answer_input_text"
+           android:layout_width="0dp"
+           android:layout_height="40dp"
+           android:layout_weight="1"
+           android:hint="答"
+            android:textSize="18px"
+           android:maxLines="2"/>
+       
+       <Button 
+           android:id="@+id/answer_send"
+           android:layout_width="wrap_content"
+          android:layout_height="40dp"
+           android:textSize="18px"
+           android:text="发送"/>
+       
+    </LinearLayout>
+</LinearLayout>

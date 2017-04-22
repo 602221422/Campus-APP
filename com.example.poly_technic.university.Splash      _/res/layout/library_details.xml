@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/library_layout"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="@android:color/white"
+	android:layout_marginBottom="0.0dip"
+    >
+	<RelativeLayout
+		android:id="@+id/library_titlebar_layout"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:background="@drawable/top_bar_background"
+		>
+		<Button
+			android:id="@+id/library_titlebar_previous"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerVertical="true"
+			android:layout_marginLeft="5.0dip"
+			android:layout_alignParentLeft="true" 
+			android:background="@drawable/newsdetails_title_previous_btn"
+			/>
+		<TextView
+			android:id="@+id/library_titlebar_title"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="65.0dip"
+			  android:layout_centerVertical="true"
+			android:layout_toRightOf="@id/library_titlebar_previous"
+			 android:textSize="20.0sp"
+            android:textStyle="bold"
+			android:textColor="@android:color/white"
+			android:text="图书详情"
+			/>
+		<ProgressBar
+			android:id="@+id/loadnews_progress"
+			android:layout_width="25.0dip"
+			android:layout_height="25.0dip"
+			android:clickable="false"
+			android:visibility="gone"
+			android:layout_marginRight="30.0dip"
+			android:layout_marginTop="10.0dip"
+			android:layout_alignParentRight="true"
+			style="?android:attr/progressBarStyleLarge" />
+	</RelativeLayout>	
+	
+	<ViewFlipper
+		android:id="@+id/libraryflipper"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:background="@android:color/black"
+		android:layout_below="@id/library_titlebar_layout" />
+
+
+	
+</RelativeLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/shape2"
+>
+
+       	<LinearLayout android:orientation="horizontal" 
+	android:layout_height="wrap_content" 
+	android:layout_width="fill_parent" >
+	</LinearLayout>
+	<LinearLayout 
+	android:orientation="horizontal" 
+	android:layout_height="wrap_content" 
+	android:layout_width="fill_parent"
+	 >
+		
+	<TextView
+	   
+	    android:layout_width="wrap_content"     
+	android:layout_height="wrap_content"
+	android:layout_weight="1"     
+	android:text="学号：" 
+	android:layout_marginLeft="3dp"
+	android:textColor="#00FF00" 
+	android:textSize="20sp"/>
+		
+	<TextView 
+	     android:id="@+id/no" 
+	    android:layout_width="wrap_content"     
+	android:layout_height="wrap_content"
+	android:layout_weight="6"     
+	android:text="show" 
+	android:textColor="#00FF00" 
+	android:textSize="20sp"/>
+	</LinearLayout>
+	    	<LinearLayout android:orientation="horizontal" 
+	android:layout_height="wrap_content" 
+	android:layout_width="fill_parent" >
+		
+	<TextView 
+	    
+	    android:layout_width="wrap_content"     
+	android:layout_height="wrap_content"
+	android:layout_weight="1"     
+	android:text="科目：" 
+	android:layout_marginLeft="3dp"
+	android:textColor="#00FF00" 
+	android:textSize="20sp"/>
+		
+	<TextView 
+	    android:id="@+id/kemu"
+	    android:layout_width="wrap_content"     
+	android:layout_height="wrap_content"
+	android:layout_weight="6"     
+	android:text="show" 
+	android:textColor="#00FF00" 
+	android:textSize="20sp"/>
+	</LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="categories">
+        <item >1|工大新闻</item>
+        <item >2|学生园地</item>
+        <item >3|社团信息</item>
+    </string-array>
+    
+</resources>

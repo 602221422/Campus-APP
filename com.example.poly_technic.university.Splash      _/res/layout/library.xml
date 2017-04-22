@@ -1,0 +1,81 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d8e0e8" 
+    android:orientation="vertical">
+    	<RelativeLayout
+
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:background="@drawable/top_bar_background"
+		>
+		<Button
+			android:id="@+id/library_titlebar_previous"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerVertical="true"
+			android:layout_marginLeft="5.0dip"
+			android:layout_alignParentLeft="true" 
+			android:background="@drawable/entertainment_previous_btn"
+			/>
+		<TextView
+			android:id="@+id/library_titlebar_title"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="10.0dip"
+			  android:layout_centerVertical="true"
+			android:layout_toRightOf="@id/library_titlebar_previous"
+			 android:textSize="20.0sp"
+            android:textStyle="bold"
+			android:textColor="@android:color/white"
+			android:text="图书查询(点击查看详情)"
+			/>
+		    <ProgressBar
+			android:id="@+id/load_progress"
+			android:layout_width="25.0dip"
+			android:layout_height="25.0dip"
+			android:clickable="false"
+			android:visibility="gone"
+			android:layout_marginRight="20.0dip"
+			android:layout_marginTop="10.0dip"
+			android:layout_alignParentRight="true"
+			style="?android:attr/progressBarStyleLarge" />
+             
+            />
+
+		
+	</RelativeLayout>
+	<LinearLayout 
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"      
+		android:focusable="true" 
+		android:focusableInTouchMode="true" >
+       
+       <EditText 
+           android:id="@+id/search_input_text"
+           android:layout_width="0dp"
+           android:layout_height="40dp"
+           android:layout_weight="1"
+       		android:hint="输入要查询的图书名"
+       		android:textSize="18px"
+           android:maxLines="1"/>
+
+       <Button
+           android:id="@+id/search_send"
+           android:layout_width="wrap_content"
+           android:layout_height="40dp"
+           android:text="搜索"
+           android:textSize="18px"
+             />
+       
+    </LinearLayout>
+    
+  <ListView
+        android:id="@+id/library_list "
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </ListView>
+
+    
+</LinearLayout>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="@android:color/white">
+
+    <RelativeLayout
+        android:id="@+id/buju"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/top_bar_background" >
+
+        <Button
+            android:id="@+id/newsdetails_titlebar_previous"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="3.0dip"
+            android:background="@drawable/entertainment_previous_btn" />
+
+        <TextView
+            android:id="@+id/newsdetails_titlebar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="45.0dip"
+            android:layout_toRightOf="@id/newsdetails_titlebar_previous"
+            android:gravity="center_horizontal"
+            android:text="成绩查询"
+            android:textColor="@android:color/white"
+            android:textSize="20.0sp"
+            android:textStyle="bold" />
+             <ProgressBar
+			android:id="@+id/load_progress"
+			android:layout_width="25.0dip"
+			android:layout_height="25.0dip"
+			android:clickable="false"
+			android:visibility="gone"
+			android:layout_marginRight="20.0dip"
+			android:layout_marginTop="10.0dip"
+			android:layout_alignParentRight="true"
+			style="?android:attr/progressBarStyleLarge" />
+    </RelativeLayout>
+<TextView 
+    android:id="@+id/chengjichaxun"
+    android:layout_height="wrap_content" 
+	android:layout_width="fill_parent"
+	android:layout_marginTop="2dp"
+	android:layout_marginBottom="2dp"
+	android:text="选择要查询的学年"
+	android:background="@drawable/shape2"
+	android:textSize="20sp"
+	android:gravity="center"
+	android:textColor="@android:color/black"/>
+       	<LinearLayout android:orientation="horizontal" 
+	android:layout_height="wrap_content" 
+	android:layout_width="fill_parent" >
+        
+	<Spinner android:id="@+id/schedule" 
+	 android:layout_height="45dp"
+	android:layout_width="fill_parent"
+	/>	
+	
+	</LinearLayout>
+	    <LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@android:color/white" >
+    
+
+        <TextView
+            android:id="@+id/kemu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:textColor="@android:color/black"
+            android:layout_alignParentLeft="true"
+            android:textSize="18sp" 
+            android:text="科目"/> 
+
+        <TextView
+            android:id="@+id/chengji"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" 
+            android:layout_marginLeft="80dp"
+            android:layout_alignParentRight="true"
+            android:text="成绩"/>
+        <TextView
+            android:id="@+id/xuefeng"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_marginLeft="80dp"
+            android:textSize="18sp" 
+            android:layout_alignParentRight="true"
+            android:text="学分"/>
+
+
+</LinearLayout>
+      <ListView
+        android:id="@+id/list1 "
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+    </ListView>
+
+</LinearLayout>

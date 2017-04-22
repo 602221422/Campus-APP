@@ -1,0 +1,280 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.poly_technic.university"
+    android:versionCode="1"
+    android:versionName="GD 1.0 | 开发版" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="15" />
+    <!-- 设置拨打电话的权限，否则要报程序停止的错误 -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <!-- 百度统计必须申明的权限 -->
+    <uses-permission android:name="android.permission.INTERNET" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true" />
+
+    <application
+        android:theme="@android:style/Theme.NoTitleBar"
+        android:icon="@drawable/cet"
+        android:label="@string/app_name" >
+
+        <!-- 以下是百度统计 -->
+        <!-- 您从百度网站获取的APP KEY -->
+        <meta-data
+            android:name="BaiduMobAd_STAT_ID"
+            android:value="1bfdbeef06" />
+        <!-- abcd1234 -->
+        <!-- 渠道商编号 -->
+        <meta-data
+            android:name="BaiduMobAd_CHANNEL"
+            android:value="feiji" />
+
+        <!-- 是否开启错误日志统计，默认为false -->
+        <meta-data
+            android:name="BaiduMobAd_EXCEPTION_LOG"
+            android:value="true" />
+        <!-- 日志发送策略，可选值：APP_START、ONCE_A_DAY、SET_TIME_INTERVAL，默认为APP_START -->
+        <meta-data
+            android:name="BaiduMobAd_SEND_STRATEGY"
+            android:value="APP_START" />
+        <!-- 日志发送策略 为SET_TIME_INTERVAL时，需设定时间间隔(取消下行注释)。取值为1-24的整数，默认为1 -->
+        <!-- <meta-data android:name="BaiduMobAd_TIME_INTERVAL" android:value="2" /> -->
+        <!-- 日志仅在wifi网络下发送，默认为false -->
+        <meta-data
+            android:name="BaiduMobAd_ONLY_WIFI"
+            android:value="false" />
+        <!-- 是否获取基站位置信息 ,默认为true -->
+        <meta-data
+            android:name="BaiduMobAd_CELL_LOCATION"
+            android:value="true" />
+        <!-- 是否获取GPS位置信息，默认为true -->
+        <meta-data
+            android:name="BaiduMobAd_GPS_LOCATION"
+            android:value="true" />
+        <!-- 是否获取WIFI位置信息，默认为true -->
+        <meta-data
+            android:name="BaiduMobAd_WIFI_LOCATION"
+            android:value="true" />
+
+        <activity
+            android:name=".Splash"
+            android:label="@string/title_activity_main"
+            android:theme="@android:style/Theme.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".navigation"
+            android:label="启动" >
+        </activity>
+        <activity android:name=".NewsDetailsActivity" >
+        </activity>
+        <activity android:name=".CommentsActivity" >
+        </activity>
+        <activity
+            android:name=".StudyActivity"
+            android:label="学习模块" >
+        </activity>
+             <activity
+            android:name=".login"
+            android:label="登录界面" >
+        </activity>
+        <activity
+            android:name=".LifeActivity"
+            android:label="生活模块" >
+        </activity>
+        <activity
+            android:name=".CommunityActivity"
+            android:label="社团模块" >
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="主页" >
+        </activity>
+        <activity
+            android:name="com.example.poly_technic.university.study.grade"
+            android:label="成绩查询" >
+        </activity>
+        <activity
+            android:name="com.example.poly_technic.university.study.schedule"
+            android:label="课表查询" >
+        </activity>
+        <activity
+            android:name="com.example.poly_technic.university.study.library"
+            android:label="图书馆查书" >
+        </activity>
+        <activity
+            android:name="com.example.poly_technic.university.study.learning_materials"
+            android:label="学习资料" >
+        </activity>
+        <activity
+            android:name="com.example.poly_technic.university.study.learn_tool"
+            android:label="学习工具" >
+        </activity>
+        <activity
+            android:name="com.example.poly_technic.university.study.computer"
+            android:label="计算机报名" >
+        </activity>
+        <activity
+            android:name="com.example.poly_technic.university.study.Borrow_books"
+            android:label="图书续借" >
+        </activity>
+        <activity
+            android:name="com.example.poly_technic.university.life.travel"
+            android:label="校园出行" >
+        </activity>
+        <activity
+            android:name="com.example.poly_technic.university.life.Takeaway"
+            android:label="外卖" >
+        </activity>
+        <activity
+            android:name="com.example.poly_technic.university.life.Found"
+            android:label="寻物招领"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.example.poly_technic.university.life.Campus_know"
+            android:label="计算机报名" >
+        </activity>
+        <activity
+            android:name=".life.Entertainment"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.example.poly_technic.university.life.energy_charge"
+            android:label="电费查询" >
+        </activity>
+        <activity
+            android:name="com.example.poly_technic.university.life.CampusScenery"
+            android:label="校园一角" >
+        </activity>
+        <activity
+            android:name=".life.Hanwangfu"
+            android:label="美食列表" >
+        </activity>
+        <activity
+            android:name=".life.Geili"
+            android:label="美食列表" >
+        </activity>
+        <activity
+            android:name=".life.Jiadeweidao"
+            android:label="美食列表" >
+        </activity>
+        <activity
+            android:name=".life.Liushitang"
+            android:label="美食列表" >
+        </activity>
+        <activity
+            android:name=".life.Haohefan"
+            android:label="美食列表" >
+        </activity>
+        <activity
+            android:name=".life.Meihaoshiguang"
+            android:label="美食列表" >
+        </activity>
+        <activity
+            android:name=".life.Jixiang"
+            android:label="美食列表" >
+        </activity>
+        <activity
+            android:name=".life.Wumingyuan"
+            android:label="美食列表" >
+        </activity>
+        <activity
+            android:name=".life.Juxiangyuan"
+            android:label="美食列表" >
+        </activity>
+        <activity
+            android:name=".life.Shiweixian"
+            android:label="美食列表" >
+        </activity>
+        <activity
+            android:name=".life.Dingtian"
+            android:label="美食列表" >
+        </activity>
+        <activity
+            android:name=".life.Dahuangfeng"
+            android:label="美食列表" >
+        </activity>
+        <activity
+            android:name=".life.Send"
+            android:label="美食列表"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity android:name="com.k.feiji.FeiJi_BaseAc" />
+        <activity android:name="com.k.feiji.FeiJi_Menu" />
+        <activity android:name="com.k.feiji.FeiJi_Main" />
+        <activity android:name="com.k.feiji.FeiJi_Score" >
+        </activity>
+        <activity android:name="com.k.feiji.FeiJi_Wel" >
+        </activity>
+        <activity android:name="com.example.poly_technic.university.study.Calculator" >
+        </activity>
+        <activity
+            android:name=".life.Baozoumanhua"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name=".life.Qiushibaike"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity android:name="com.example.c2048.Main2048" >
+        </activity>
+        <activity android:name=".study.Dictionary" >
+        </activity>
+        <activity android:name=".study.Jishiben" >
+        </activity>
+        <activity android:name=".study.XieRiJi" >
+        </activity>
+          <activity
+            android:name="com.example.poly_technic.university.community.communityDetails"
+            android:label="社团详细信息" >
+        </activity>
+         <activity
+            android:name="com.example.poly_technic.university.community.CommunityChat"
+            android:label="社团聊天室" >
+        </activity>
+        <activity
+            android:name="com.example.poly_technic.university.life.Campus_know_answer"
+            android:label="校园知道回答" >
+        </activity>
+         <activity
+            android:name="com.example.poly_technic.university.study.libraryDetails"
+            android:label="图书查询详情" >
+        </activity>
+        <activity android:name=".study.Lizhi"
+            android:label="励志中国" >
+        </activity>
+        <activity android:name=".study.Keke"
+            android:label="可可英语" >
+        </activity>
+        <activity android:name=".Help"
+            android:label="帮助" >
+        </activity>
+        <activity android:name=".About"
+            android:label="关于我们" >
+        </activity>
+        <activity android:name="com.example.poly_technic.university.study.libraryDetail"
+            android:label="图书详情" >
+        </activity>
+         
+    </application>
+
+</manifest>

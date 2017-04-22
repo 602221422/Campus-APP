@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+<RelativeLayout 
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:background="@drawable/top_bar_background"
+		>
+		<Button
+			android:id="@+id/newsdetails_titlebar_previous"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerVertical="true"
+			android:layout_marginLeft="3.0dip"
+			android:layout_alignParentLeft="true" 
+			android:background="@drawable/entertainment_previous_btn"
+			/>
+		<TextView
+			android:id="@+id/newsdetails_titlebar_title"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="50.0dip"
+			  android:layout_centerVertical="true"
+			android:layout_toRightOf="@id/newsdetails_titlebar_previous"
+			 android:textSize="20.0sp"
+            android:textStyle="bold"
+			android:textColor="@android:color/white"
+			android:text="发布信息"
+			android:gravity="center_horizontal"
+			/>
+	
+	</RelativeLayout>	
+
+    
+
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/radio0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="招领   |  "
+            android:textColor="@android:color/black" 
+            />
+
+        <RadioButton
+            android:id="@+id/radio1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="失物"
+            android:textColor="@android:color/black" 
+           />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/et1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/shape"
+        android:hint="标题（20字以内）"
+        android:maxLength="20"
+        android:inputType="textMultiLine"
+        android:minLines="1"
+        android:padding="10px"
+        android:singleLine="true"
+        android:textColor="@android:color/black" /> 
+
+    <EditText
+        android:id="@+id/et2"
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp" 
+        android:hint="请输入详细内容"
+        android:inputType="textMultiLine"
+        android:maxLines="10"
+        android:minLines="8"
+        android:padding="10px"
+        android:singleLine="true"
+        android:background="@drawable/shape2"
+        />
+    <Button 
+        android:id="@+id/fanbu"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+         android:layout_marginTop="10dp"
+         android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="#129AEE"
+        android:textColor="@android:color/white"
+        android:text="发布"
+        android:textSize="23sp"/>
+
+</LinearLayout>

@@ -1,0 +1,73 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:id="@id/main_layout"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" 
+    android:id="@id/titlebar_layout"
+    android:background="@drawable/top_bar_background"
+         >
+
+        <TextView
+            android:id="@id/titlebar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+           android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal"
+            android:text="@string/title_name"
+            android:textColor="@android:color/white"
+            android:textSize="20.0sp"
+            android:textStyle="bold" />
+        <Button 
+           android:id="@id/titlebar_refresh"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:background="@drawable/title_bnt_refresh_selector"
+           android:layout_alignParentRight="true"
+           android:layout_centerVertical="true"
+           android:layout_marginRight="5.0dip"
+           />
+        	<ProgressBar
+			android:id="@+id/loadnews_progress"
+			android:layout_width="25.0dip"
+			android:layout_height="25.0dip"
+			android:clickable="false"
+			android:visibility="gone"
+			android:layout_marginRight="20.0dip"
+			android:layout_marginTop="10.0dip"
+			android:layout_alignParentRight="true"
+			style="?android:attr/progressBarStyleLarge" />
+    </RelativeLayout>
+
+   
+        <LinearLayout
+        android:id="@id/category_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:background="@drawable/categraybar_layout_background"
+             >
+            
+        </LinearLayout>
+          <View
+   android:layout_width="match_parent"         
+   android:layout_height="2px"        
+   android:background="#129AEE" />
+ 
+    <ListView
+        android:id="@+id/news_list" 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="#00000000"
+       
+         >
+    </ListView>
+ 
+
+
+</LinearLayout> 

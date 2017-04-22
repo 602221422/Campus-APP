@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"  
+    android:id="@+id/empty_cart_view"  
+    android:layout_width="fill_parent"  
+    android:layout_height="fill_parent"  
+    android:background="#ffefebe7" >  
+  
+    <RelativeLayout 
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:background="@drawable/top_bar_background"
+		>
+		<Button
+			android:id="@+id/newsdetails_titlebar_previous"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerVertical="true"
+			android:layout_marginLeft="3.0dip"
+			android:layout_alignParentLeft="true" 
+			android:background="@drawable/entertainment_previous_btn"
+			/>
+		<TextView
+			android:id="@+id/newsdetails_titlebar_title"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="70.0dip"
+			  android:layout_centerVertical="true"
+			android:layout_toRightOf="@id/newsdetails_titlebar_previous"
+			 android:textSize="20.0sp"
+            android:textStyle="bold"
+			android:textColor="@android:color/white"
+			android:text="娱乐"
+			android:gravity="center_horizontal"
+			/>
+	
+	</RelativeLayout>	
+
+
+        <LinearLayout  
+            android:layout_width="fill_parent"  
+            android:layout_height="wrap_content"  
+            android:gravity="center_vertical"  
+            android:orientation="vertical"  
+            android:paddingBottom="60.0dip"  
+            android:paddingLeft="10.0dip"  
+            android:paddingRight="10.0dip"  
+            android:paddingTop="10.0dip" >  
+
+  
+            <TextView  
+                android:layout_width="fill_parent"  
+                android:layout_height="wrap_content"  
+                android:layout_marginBottom="10.0dip"  
+                android:gravity="center_vertical"  
+                android:paddingLeft="4.0dip"  
+                android:text="搞笑阅读"  
+                android:textColor="#ff888888"  
+                android:textSize="16.0sp" 
+                android:layout_marginTop="45dp"/>  
+  
+            <LinearLayout  
+                android:layout_width="fill_parent"  
+                android:layout_height="wrap_content" >  
+  
+                <TableLayout  
+                    android:id="@+id/MorePageTableLayout_Follow"  
+                    android:layout_width="fill_parent"  
+                    android:layout_height="wrap_content"  
+                    android:paddingLeft="1.0dip"  
+                    android:shrinkColumns="0"  
+                    android:stretchColumns="0"
+                    android:background="@drawable/shape2" >  
+  
+                    <TableRow  
+                        android:id="@+id/more_page_row1"  
+                        android:layout_width="fill_parent"  
+                        android:layout_marginLeft="2.0dip"  
+                        android:layout_marginRight="2.0dip"  
+                        android:paddingBottom="16.0dip"  
+                        android:paddingTop="16.0dip" >  
+  
+                        <TextView  
+                            android:id="@+id/textqiushi"
+                            android:layout_width="wrap_content"  
+                            android:layout_height="fill_parent"  
+                            android:drawablePadding="10.0dip"  
+                            android:gravity="center_vertical"  
+                            android:includeFontPadding="false"  
+                            android:paddingLeft="17.0dip"  
+                            android:text="糗事百科"  
+                            android:textColor="#ff333333"  
+                            android:textSize="16.0sp" />  
+  
+                        <ImageView  
+                            android:layout_width="wrap_content"  
+                            android:layout_height="fill_parent"  
+                            android:layout_gravity="right"  
+                            android:gravity="center_vertical"  
+                            android:paddingRight="20.0dip"  
+                           />  
+                    </TableRow>  
+  
+                    <TableRow  
+                        android:id="@+id/more_page_row2"  
+                        android:layout_width="fill_parent"  
+                        android:layout_marginLeft="2.0dip"  
+                        android:layout_marginRight="2.0dip"  
+                        android:paddingBottom="16.0dip"  
+                        android:paddingTop="8.0dip" >  
+  
+                        <TextView  
+                            android:id="@+id/textbaozou"
+                            android:layout_width="wrap_content"  
+                            android:layout_height="fill_parent"  
+                            android:drawablePadding="10.0dip"  
+                            android:gravity="center_vertical"  
+                            android:includeFontPadding="false"  
+                            android:paddingLeft="17.0dip"  
+                            android:text="暴走漫画"  
+                            android:textColor="#ff333333"  
+                            android:textSize="16.0sp" />  
+  
+                        <ImageView  
+                            android:layout_width="wrap_content"  
+                            android:layout_height="fill_parent"  
+                            android:layout_gravity="right"  
+                            android:gravity="center_vertical"  
+                            android:paddingRight="20.0dip"  
+                             />  
+                    </TableRow>  
+                </TableLayout>  
+            </LinearLayout>  
+  
+            <TextView  
+                android:layout_width="fill_parent"  
+                android:layout_height="wrap_content"  
+                android:layout_marginBottom="10.0dip"  
+                android:layout_marginTop="10.0dip"  
+                android:gravity="center_vertical"  
+                android:paddingLeft="4.0dip"  
+                android:text="小游戏"  
+                android:textColor="#ff888888"  
+                android:textSize="16.0sp" />  
+  
+            <LinearLayout  
+                android:layout_width="fill_parent"  
+                android:layout_height="wrap_content" >  
+  
+                <TableLayout  
+                    android:id="@+id/MorePageTableLayout_Client"  
+                    android:layout_width="fill_parent"  
+                    android:layout_height="wrap_content"  
+                    android:paddingLeft="1.0dip"  
+                    android:shrinkColumns="0"  
+                    android:stretchColumns="0"
+                    android:background="@drawable/shape2" >  
+  
+                    <TableRow  
+                        android:id="@+id/more_page_row4"  
+                        android:layout_width="fill_parent"  
+                        android:layout_marginLeft="2.0dip"  
+                        android:layout_marginRight="2.0dip"  
+                        android:paddingBottom="16.0dip"  
+                        android:paddingTop="16.0dip" >  
+  
+                        <TextView  
+                            android:id="@+id/textfeixing"
+                            android:layout_width="wrap_content"  
+                            android:layout_height="fill_parent"  
+                            android:drawablePadding="10.0dip"  
+                            android:gravity="center_vertical"  
+                            android:includeFontPadding="false"  
+                            android:paddingLeft="17.0dip"  
+                            android:text="飞行大战"  
+                            android:textColor="#ff333333"  
+                            android:textSize="16.0sp" />  
+  
+                        <ImageView  
+                            android:layout_width="wrap_content"  
+                            android:layout_height="fill_parent"  
+                            android:layout_gravity="right"  
+                            android:gravity="center_vertical"  
+                            android:paddingRight="20.0dip"  
+                             />  
+                    </TableRow>  
+  
+                    <TableRow  
+                        android:id="@+id/more_page_row5"  
+                        android:layout_width="fill_parent"  
+                        android:layout_marginLeft="2.0dip"  
+                        android:layout_marginRight="2.0dip"  
+                        android:paddingBottom="16.0dip"  
+                        android:paddingTop="8.0dip"
+                         >  
+  
+                        <TextView  
+                            android:id="@+id/text2048"
+                            android:layout_width="wrap_content"  
+                            android:layout_height="fill_parent"  
+                            android:drawablePadding="10.0dip"  
+                            android:gravity="center_vertical"  
+                            android:includeFontPadding="false"  
+                            android:paddingLeft="17.0dip"  
+                            android:text="2048"  
+                            android:textColor="#ff333333"  
+                            android:textSize="16.0sp" />  
+  
+                        <ImageView  
+                            android:layout_width="wrap_content"  
+                            android:layout_height="fill_parent"  
+                            android:layout_gravity="right"  
+                            android:gravity="center_vertical"  
+                            android:paddingRight="20.0dip"  
+                            />  
+                    </TableRow>    
+                </TableLayout>  
+            </LinearLayout>  
+        </LinearLayout>  
+
+  
+</RelativeLayout>  

@@ -1,0 +1,85 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    orientation="vertical"
+    android:background="@android:color/white" >
+
+    <!-- 底部的页面布局 -->
+    <TabHost
+        android:id="@android:id/tabhost"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0" >
+            </FrameLayout>
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" >
+            </TabWidget>
+
+            <RadioGroup
+                android:id="@+id/main_radio"
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/bottom"
+                android:gravity="bottom"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/button1"
+                    style="@style/text_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2.5dp"
+                    android:checked="true"
+                    android:drawableTop="@drawable/a"
+                    android:tag="button1"
+                   android:text="@string/activity" />
+
+                <RadioButton
+                    android:id="@+id/button2"
+                    style="@style/text_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-1.0dp"
+                    android:drawableTop="@drawable/b"
+                    android:tag="button2"
+                    android:text="@string/study" />
+
+                <RadioButton
+                    android:id="@+id/button3"
+                    style="@style/text_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-1.0dp"
+                    android:drawableTop="@drawable/c"
+                    android:tag="button3"
+                    android:text="@string/life" />
+
+                <RadioButton
+                    android:id="@+id/button4"
+                    style="@style/text_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-1.0dp"
+                    android:drawableTop="@drawable/d"
+                    android:tag="button4"
+                    android:text="@string/shetuan" />
+            </RadioGroup>
+        </LinearLayout>
+    </TabHost>
+
+</RelativeLayout>
